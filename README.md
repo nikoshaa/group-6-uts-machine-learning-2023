@@ -10,93 +10,50 @@
 - [Mochammad Zaky Zamroni](https://github.com/zakyzuf)
 - [Ziedny Bisma Mubarok](https://github.com/Ziedny28)
 
-## Kasus - Klasifikasi Tulisan Tangan dengan Dataset MNIST
+## Segmentasi Gambar dengan Clustering
 
-## Overview
+Segmentasi merupakan salah satu cara untuk membedakan antara objek satu dengan objek lainnya dalam suatu citra. Cara ini dapat dilakukan dengan mengelompokkan nilai pixel citra berdasarkan kedekatan warnanya.
 
-Anda diminta untuk melakukan klasifikasi dengan menggunakan algoritma **Naive Bayes** dan **SVM** untuk merekognisi tulisan tangan dari dataset MNIST.
+Pada UTS kali ini, Anda diminta untuk melakukan segmentasi citra plat nomor kendaraan di Indonesia. Fungsi segmentasi dalam kasus ini adalah mempermudah pembacaan plat nomor kendaraan sebelum proses selanjutnya, seperti pembacaan karakter pada plat nomor.
 
-## About Dataset MNIST
+## Ketentuan UTS
 
-Dataset **MNIST** (Modified National Institute of Standards and Technology) merupakan dataset berupa citra _grayscale_ dengan ukuran 28x28 yang berisi tulisan tangan dari digit angka 0-9. Jumlah data dalam dataset ini adalah 70.000 data.
+Berdasarkan pemaparan kasus, Anda diminta untuk,
 
-## Result
+1. Pilih 5 citra plat nomor untuk setiap anggota kelompok dari dataset yang telah disediakan. [DOWNLOAD](https://storage.googleapis.com/kuliah_mah/dummy.zip)
+2. Lakukan segmentasi pada citra plat nomor untuk memperjelas karakter pada plat nomor.
+3. Anda dapat menggunakan algortima K-Means seperti yang telah dijelaskan pada praktikum sebelumnya atau menggunakan algoritma klasterisasi yang lain.
+4. Anda diperkenankan untuk melakukan pra pengolahan data (preprocessing) pada citra seperti,
+   - Merubah color space
+   - Reduksi dimensi
+   - dsb
+5. Tampilkan perbandingan citra antara sebelum dan sesudah di segmentasi
 
-[Group 6 - Quiz 1](./Group_6_Quiz_1.ipynb)
+## Open Challange (Opsional)
+
+- Bagaimana cara melakukan evaluasi pada hasil segementasi?
+- Terapkan pada kasus ini!
+
+## Catatan:
+
+1. Proses loading citra dicontohkan dengan menggunakan library openCV
+2. Secara default, openCV akan memuat citra dalam format BGR
 
 ## Kesimpulan dari Berbagai Metode dan Hasil yang didapat
 
-### 1. SVM
+[Wildan Hafidz Mauludin](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS_ML_Wildan%20Hafidz%20Mauludin.ipynb)
 
-**SVM**(_Support Vector Machine_) adalah salah satu metode klasifikasi yang paling populer dan kuat. _SVM_ adalah metode klasifikasi biner, yang mengklasifikasikan data menjadi dua bagian.
+[Ziedny Bisma Mubarok](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS_ML_Mochammad_Zaky_Zamroni.ipynb)
 
-#### 1.1 SVM RBF Kernel Hyperparameter Tuning
+[Mochammad Zaky Zamroni](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS_ML_Mochammad_Zaky_Zamroni.ipynb)
 
-[Wildan Hafidz Mauludin](https://github.com/nikoshaa)
-
-Dilakukan percobaan dengan menggunakan metode **Kernel RBF** dengan berbagai nilai `test_size`, dan dengan hyperparameter tuning. Berikut adalah hasilnya :
-
-| Test Size | Accuracy |
-| --------- | -------- |
-| 0,3       | 98,54%   |
-| 0,2       | 98,58%   |
-| 0,1       | 98.64%   |
-
-#### 1.2 SVM Linear Kernel Non Hyper Parameter Tunning
-
-[Ziedny Bisma Mubarok](https://github.com/Ziedny28)
-
-Dilakukan percobaan dengan menggunakan metode **Kernel Linear** dengan berbagai nilai `test_size`, dan non hyperparameter tuning. Berikut adalah hasilnya :
-
-| Test Size | Accuracy |
-| --------- | -------- |
-| 0,3       | 83,81%   |
-| 0,2       | 84,55%   |
-| 0,1       | 83,77%   |
-
-### 2. Naive Bayes
-
-**Naive Bayes** adalah sebuah algoritma klasifikasi yang didasarkan pada Teorema Bayes dengan asumsi bahwa fitur-fitur yang digunakan dalam klasifikasi adalah saling independen dan memiliki pengaruh yang sama terhadap kelas yang diinginkan.
-
-#### 2.1 Gaussian Naive Bayes dengan PCA
-
-[Mochammad Zaky Zamroni](https://github.com/zakyzuf)
-
-Dilakukan percobaan dengan menggunakan **Gaussian Naive Bayes** dengan _PCA_ untuk feature reduction, dengan berbagai nilai `test_size`. Berikut adalah hasilnya :
-
-| Test Size | Accuracy |
-| --------- | -------- |
-| 0,3       | 87,01%   |
-| 0,2       | 87,17%   |
-| 0,1       | 86,81%   |
-
-#### 2.2 Multinomial Naive Bayes dengan PCA
-
-[Dhayu Intan Nareswari](https://github.com/DhayuIntan)
-
-Dilakukan percobaan dengan menggunakan **Multinomial Naive Bayes** dengan _PCA_ untuk _feature reduction_, dengan berbagai nilai `test_size`. Berikut adalah hasilnya :
-
-| Test Size | Accuracy |
-| --------- | -------- |
-| 0,3       | 90,34%   |
-| 0,2       | 90,42%   |
-| 0,1       | 90,37%   |
-
-#### 2.3 Gaussian Naive Bayes dengan Histogram
+[Dhayu Intan Nareswari](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS__ML_Dhayu%20Intan%20Nareswari.ipynb)
 
 [Farhan Dwi Pramana](https://github.com/FarhanDwiPramana)
 
-Dilakukan percobaan menggunakan metode **Gaussian Naive Bayes**, _Histogram_ juga digunakan disini, berikut adalah hasilnya:
+## Kesimpulan
 
-| Test Size | Accuracy |
-| --------- | -------- |
-| 0,3       | 56,38%   |
-| 0,2       | 56,25%   |
-| 0,1       | 56,25%   |
-
-#### Kesimpulan
-
-Lima metode digunakan untuk dilakukan prediksi terhadap dataset _mnist_ yang merupakan gambar tulis tangan, dapat disimpulkan bahwa setelah melakukan proses _tuning hyperparameter_ untuk model **SVM dengan kernel RBF**, metode dengan pengujian menggunakan ukuran data uji sebesar 10% (`test_size` 0.1) terbukti menjadi yang terbaik, menghasilkan akurasi sebesar **98.64%** saat diuji. Metode lain yang menghasilakn akurasi tinggi adalah **Multinomial Naive Bayes** dengan _PCA_ dengan data uji atau `test_size` sebesar 0,2 dengan akurasi **90,42%**.
+Kesimpulan dari semua metode yang telah dilakukan adalah bahwa hasil dari nomor plat tidak dapat terbaca jika kondisi citra plat rusak atau penyok namun jika kondisi plat tersebut tidak rusak atau penyok hasil dari nomor plat dapat terbaca dengan baik.
 
 ## License
 

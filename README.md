@@ -49,11 +49,13 @@ Berdasarkan pemaparan kasus, Anda diminta untuk,
 
 [Dhayu Intan Nareswari](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS__ML_Dhayu%20Intan%20Nareswari.ipynb)
 
-[Farhan Dwi Pramana](https://github.com/FarhanDwiPramana)
+[Farhan Dwi Pramana](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS_ML_Farhan_Dwi_Pramana.ipynb)
 
 ## Kesimpulan
 
-Kesimpulan dari semua metode yang telah dilakukan adalah bahwa hasil dari nomor plat tidak dapat terbaca jika kondisi citra plat rusak atau penyok namun jika kondisi plat tersebut tidak rusak atau penyok hasil dari nomor plat dapat terbaca dengan baik.
+Metode K Means clustering adalah algoritma clustering yang dapat digunakan untuk mempermudah mesin dalam membaca nomor plat kendaraan, prosesnya adalah dilakukan pengelompokan terhadap dua cluster, yakni tulisan dan background. Akan tetapi, akan lebih baik jika dilakukan pembersihan data, preprocessing untuk memperjelas citra sebelum dilakukan clustering.
+
+Kesimpulan dari semua metode yang telah dilakukan adalah bahwa hasil dari nomor plat tidak dapat terbaca jika kondisi citra plat rusak atau penyok namun jika kondisi citra plat tersebut tidak rusak atau penyok hasil dari nomor plat dapat terbaca dengan baik.
 
 ## License
 

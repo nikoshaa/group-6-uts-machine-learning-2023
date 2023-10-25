@@ -47,7 +47,7 @@ Berdasarkan pemaparan kasus, Anda diminta untuk,
 
 [Mochammad Zaky Zamroni](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS_ML_Mochammad_Zaky_Zamroni.ipynb)
 
-[Dhayu Intan Nareswari](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS__ML_Dhayu%20Intan%20Nareswari.ipynb)
+[Dhayu Intan Nareswari](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS_ML_Dhayu%20Intan%20Nareswari.ipynb)
 
 [Farhan Dwi Pramana](https://github.com/nikoshaa/group-6-uts-machine-learning-2023/blob/main/UTS_ML_Farhan_Dwi_Pramana.ipynb)
 
